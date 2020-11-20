@@ -2,6 +2,10 @@
     Base Style
 ------------------------------------ */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Merriweather', serif;
 }
@@ -26,13 +30,62 @@ main {
     margin: 0 auto;
 }
 
+select,
+section p,
+.flex-inner option,
+:disabled {
+    color: rgb(139, 139, 139);
+}
+
+form {
+    margin-top: 3px;
+}
+
+fieldset input:last-of-type {
+    margin-right: auto;
+    width: 50%;
+}
+
+select,
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+legend {
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+legend:nth-of-type(1) {
+    width: 100%;
+    border-top: 3px solid #000;
+}
+
+label {
+    color: #363635;
+}
+
+input::placeholder {
+    padding-right: 20px;
+    text-align: right;
+    font-style: italic;
+}
+
+/* ------------------------------------
+    Class Selectors
+------------------------------------ */
+
 .main-header {
     text-align: center;
 }
 
 .main-header section {
     width: 90%;
-    margin: 0 auto 32px;
+    margin: 0 auto;
     border-bottom: 5px solid #000;
 }
 
@@ -44,6 +97,29 @@ main {
 .container {
     display: flex;
     flex-direction: column;
+}
+
+.flex-outer {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+select,
+.flex-outer > input[type] {
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 4px;
+}
+
+.flex-outer > input:last-of-type {
+    margin-bottom: 0;
+}
+
+.flex-inner {
+    flex-basis: 4em;
+    padding: 0 0 0 20px;
+    background-color: rgb(230, 231, 234);
 }
 
 .main-footer {
