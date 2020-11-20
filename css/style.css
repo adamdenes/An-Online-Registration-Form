@@ -195,4 +195,8 @@ button {
 
 @media (min-width: 768px) {
 
+    h1 {
+        padding: 1.3rem;
+        font-size: 1.1rem;
+    }
 }
