@@ -24,10 +24,12 @@
                 <legend>Contact Information</legend>
 
                 <label for="full_name">Full Name</label><br>
-                <input class="flex-inner" type="text" id="full_name" name="user_name" placeholder="Required" required><br>
+                <input class="flex-inner" type="text" id="full_name" name="user_name" placeholder="Required"
+                    required><br>
 
                 <label for="email_address">Email Address</label><br>
-                <input class="flex-inner" type="email" id="email_address" name="user_email" placeholder="Required" required><br>
+                <input class="flex-inner" type="email" id="email_address" name="user_email" placeholder="Required"
+                    required><br>
 
                 <label for="phone_address">Phone Number</label><br>
                 <input class="flex-inner" type="tel" id="phone_address" name="user_phone"><br>
@@ -140,25 +142,37 @@
                 <input class="flex-inner" type="number" id="zip_code" name="user_zip"><br>
             </fieldset>
 
-            <fieldset  class="flex-outer2">
+            <fieldset class="flex-outer2">
                 <legend>Newsletter</legend>
 
-                <label>Select the newsletter you would like to receive</label><br>
-                <input type="checkbox" name="user_news" value="html" id="html_news"><label class="item" for="html_news"> HTML
-                    News</label><br>
-                <input type="checkbox" name="user_news" value="css" id="css_news"><label class="item" for="css_news"> CSS
-                    News</label><br>
-                <input type="checkbox" name="user_news" value="js" id="js_news"><label class="item" for="js_news"> Javascript
-                    News</label><br>
+                <label class="item select">Select the newsletter you would like to receive</label>
+                <div class="item">
+                    <input type="checkbox" name="user_news" value="html" id="html_news"><label for="html_news"> HTML
+                        News</label><br>
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="user_news" value="css" id="css_news"><label for="css_news"> CSS
+                        News</label><br>
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="user_news" value="js" id="js_news"><label for="js_news"> Javascript
+                        News</label><br>
+                </div>
 
-                <label>Newsletter format</label><br>
-                <input type="radio" name="newsletter_format" value="html_format" id="html_radio"><label
-                    for="html_radio">HTML</label><br>
-                <input type="radio" name="newsletter_format" value="text_format" id="plain_text"><label
-                    for="plain_text">Plain text</label><br>
+                <label class="item news">Newsletter format</label><br>
+                <div class="item">
+                    <input type="radio" name="newsletter_format" value="html_format" id="html_radio"><label
+                        for="html_radio">HTML</label><br>
+                </div>
+                <div class="item">
+                    <input type="radio" name="newsletter_format" value="text_format" id="plain_text"><label
+                        for="plain_text">Plain text</label><br>
+                </div>
 
-                <label for="user_text">Other topics you'd like to hear about</label><br>
-                <textarea name="user_topics" id="user_text"></textarea>
+                <div class="item">
+                    <label id="last" for="user_text">Other topics you'd like to hear about</label><br>
+                    <textarea name="user_topics" id="user_text" rows="5"></textarea>
+                </div>
             </fieldset>
             <button type="submit">Sign Up</button>
         </form>
