@@ -76,6 +76,13 @@ input::placeholder,
     color: rgba(0, 0, 0, .3);
 }
 
+input:focus, 
+select:focus,
+textarea:focus,
+button:focus {
+    outline-color: rgba(12, 58, 128, 0.623);
+  }
+
 button[type="submit"] {
     flex: 1 60px;
     font-size: 1.3rem;
@@ -105,11 +112,6 @@ button[type="submit"] {
 .main-header p:last-child {
     font-size: .9rem;
     margin-bottom: 32px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
 }
 
 .flex-outer {
@@ -199,10 +201,23 @@ button {
         padding: 1.3rem;
         font-size: 1.1rem;
     }
+
+    button[type="submit"] {
+        font-size: 1.1rem;
+    }
+
+    .container,
+    .main-header section{
+        width: 66%;
+        max-width: 800px;
+        justify-content: center;
+        align-items: center;
+    }
     
     .flex-outer {
         flex-flow: row wrap;
     }
+
     .flex-label {
         flex: 1 25%;
     }
@@ -223,6 +238,11 @@ button {
         padding-left: 1.25rem;
     }
 
-    .flex-outer > input:last-of-type {
+    #zip_code {
+        margin-right: 55%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        flex: 0 20%;
     }
 }
