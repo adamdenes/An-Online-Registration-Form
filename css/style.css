@@ -251,10 +251,10 @@ button {
     }
 
     #zip_code {
-        margin-right: 55%;
+        margin-right: 45%;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        flex: 0 20%;
+        flex: 0 30%;
     }
 }
