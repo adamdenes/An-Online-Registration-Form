@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Merriweather', serif;
+    background-color: rgba(197, 214, 149, 0.137);
 }
 
 h1 {
@@ -78,10 +79,12 @@ input::placeholder,
 
 input:focus, 
 select:focus,
-textarea:focus,
-button:focus {
-    outline-color: rgba(12, 58, 128, 0.623);
-  }
+textarea:focus {
+    outline-color: #72d6c6;
+    transition: outline .75s linear;
+    background: rgba(200, 203, 209, 0.863);
+    transition: background-color .75s ease-in;
+}
 
 button[type="submit"] {
     flex: 1 60px;
@@ -93,6 +96,16 @@ button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 30px;
     margin-left: 2px;
+}
+
+button:focus {
+    outline-color: #197e75;
+    transition: outline .75s linear;
+}
+
+button:hover {
+    background-color: #197e75;
+    cursor: pointer;
 }
 
 /* ------------------------------------
