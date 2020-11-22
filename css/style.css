@@ -81,10 +81,8 @@ input:focus,
 select:focus,
 textarea:focus {
     outline-color: #72d6c6;
-    transition: outline .75s linear;
-    background: rgba(200, 203, 209, 0.863);
-    transition: background-color .75s ease-in;
-}
+    transition: outline .5s linear;
+}       
 
 button[type="submit"] {
     flex: 1 60px;
